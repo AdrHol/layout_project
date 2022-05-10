@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Roboto', 'sans-serif';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
 *{
-    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     min-height: 100vh;
@@ -34,6 +39,20 @@ ul {
     color: #e5e7eb;
     font-size: 18px;
 }
+
+.header-button,
+.bottom-button {
+background-color: #3882f6;
+color: #e5e7eb;
+width: 140px;
+height: 35px;
+font-size: 20px;
+font-weight: bold;
+border-style: none;
+border-radius: 10px;
+margin-top: 10px;
+}
+
 
 /* To be considered: one width for navbar and header */
 
@@ -84,8 +103,8 @@ header .container img {
 
 /* 2nd Iteration - Section 2 */
 
-section .info {
-    height: 400px;
+.info {
+    height: 500px;
 }
 
 .random {
@@ -96,12 +115,15 @@ section .info {
 .info .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .container .portfolio {
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-self: center;
+    height: auto;
 }
 
 .bucket {
@@ -121,4 +143,87 @@ section .info {
 
 .bucket p {
     margin-top: 7px;
+}
+
+/* 3rd Iteration - Section Quote */
+
+.quote {
+    height: 350px;
+    background-color: #e5e7eb;
+}
+
+.quote .q-container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.q-container .text {
+    width: 850px;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.q-container .sub {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    width: 850px;
+    text-align: right;
+}
+
+/* 4th iteration - section sign up */
+
+.signup {
+    height: 250px;
+}
+
+.signup .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3882f6;
+    gap: 35px;
+    border-radius: 15px;
+}
+
+.signup-text {
+    color: #f9faf8;
+    font-size: 1.2em;
+}
+
+.signup-text h2 {
+    margin-bottom: 5px;
+}
+
+.signup p {
+    margin-top: 5px;
+}
+
+.bottom-button {
+    border: 1px solid white;
+}
+
+/* 5th iteration - footer layout */
+
+footer {
+    height: 80px;
+    background-color: #1f2937;
+    text-align: center;
+    line-height: 80px;
+    color: #e5e7eb;
+    font-size: 20px;
 }
